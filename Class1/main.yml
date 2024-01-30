@@ -11,7 +11,7 @@
     yum:
       name: git
       state: latest
-  - name: start httpd
+  - name: Start service httpd, if not started
     service:
       name: httpd
       state: started
